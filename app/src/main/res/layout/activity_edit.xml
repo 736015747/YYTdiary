@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditTextEditTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="作者："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/EditTextEditAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="创建时间："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/DateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+<!--            <Button-->
+<!--                android:id="@+id/insert_img"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="插入图片"-->
+<!--                android:textSize="12sp"></Button>-->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/insert_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/pic"
+                app:backgroundTint="#ffffffff"
+                app:borderWidth="0dp"
+                app:elevation="6dp"
+                app:fabSize="mini"
+                app:pressedTranslationZ="6dp"
+                app:rippleColor="#ffe5e5e5"
+                />
+<!--            <Button-->
+<!--                android:id="@+id/ButtonCancel"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="取消"-->
+<!--                android:textSize="12sp" />-->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ButtonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/cancel"
+                app:backgroundTint="#ffffffff"
+                app:borderWidth="0dp"
+                app:elevation="6dp"
+                app:fabSize="mini"
+                app:pressedTranslationZ="6dp"
+                app:rippleColor="#ffe5e5e5"
+                />
+
+<!--            <Button-->
+<!--                android:id="@+id/ButtonSave"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:text="保存"-->
+<!--                android:textSize="12sp" />-->
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ButtonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ok"
+                app:backgroundTint="#ffffffff"
+                app:borderWidth="0dp"
+                app:elevation="6dp"
+                app:fabSize="mini"
+                app:pressedTranslationZ="6dp"
+                app:rippleColor="#ffe5e5e5"
+                />
+<!--            <Button-->
+<!--                android:id="@+id/ButtonDelete"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="删除"-->
+<!--                android:textSize="12sp" />-->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ButtonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/delete"
+                app:backgroundTint="#ffffffff"
+                app:borderWidth="0dp"
+                app:elevation="6dp"
+                app:fabSize="mini"
+                app:pressedTranslationZ="6dp"
+                app:rippleColor="#ffe5e5e5"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/EditTextEditContent"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1.25"
+            android:gravity="start"
+            android:hint="此处记录备忘事件"
+
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
